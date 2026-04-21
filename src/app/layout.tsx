@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Strawberry Tea - Guilda de Brawlhalla",
   description: "Feito com Next.JS",
+  icons: "./image/logo-st.png",
 };
 
 export default function RootLayout({
