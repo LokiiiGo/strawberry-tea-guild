@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+/* 
+import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,10 +14,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+${geistSans.variable} ${geistMono.variable}
+*/
+
 export const metadata: Metadata = {
   title: "Strawberry Tea - Guilda de Brawlhalla",
   description: "Feito com Next.JS",
-  icons: "./image/logo-st.png",
+  icons: {
+    icon: "/images/logo-st.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

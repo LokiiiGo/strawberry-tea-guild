@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 body {
-  background: linear-gradient(-45deg, #a10000, #700000, #94012a, #e40303);
+  /* background: linear-gradient(-45deg, #a10000, #700000, #94012a, #e40303);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   color: white;
+  */
+  background: black;
+  color: white;
 }
 
+/*
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -20,3 +24,4 @@ body {
     background-position: 0% 50%;
   }
 }
+*/
