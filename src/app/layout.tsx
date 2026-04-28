@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Strawberry Tea - Guilda de Brawlhalla",
   description: "Feito com Next.JS",
   icons: {
-    icon: "/images/logo-st.png",
+    icon: "/assets/logo-st.png",
   },
 };
 
