@@ -19,7 +19,7 @@ ${geistSans.variable} ${geistMono.variable}
 
 export const metadata: Metadata = {
   title: "Strawberry Tea - Guilda de Brawlhalla",
-  description: "Feito com Next.JS",
+  description: "===-===-===",
   icons: {
     icon: "/assets/logo-st.png",
   },
@@ -35,7 +35,10 @@ export default function RootLayout({
       lang="pt-br"
       className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
-  );
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+          <body className="lexend min-h-full flex flex-col">{children}</body>
+        </html>
+        );
 }
